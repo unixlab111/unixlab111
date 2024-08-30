@@ -21,7 +21,7 @@ case $choice in
 1 ) ls -l $file | cut -d ' ' -f  5 ;;
 2 ) ls -l $file | cut -d ' ' -f  1 ;;
 3 ) ls -l $file | cut -d ' ' -f  2 ;;
-4 )  ls -l $file | cut -d ' ' -f  10 ;;
+4 ) ls -l $file | rev | cut -d ' ' -f 1 | rev ;;
 
 * ) echo "invalid choice....";;
 
